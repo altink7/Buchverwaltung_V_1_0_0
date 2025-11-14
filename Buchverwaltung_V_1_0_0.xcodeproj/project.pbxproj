@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D9D85062A193E61003EE515 /* Buchverwaltung_V_1_0_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D85052A193E61003EE515 /* Buchverwaltung_V_1_0_0App.swift */; };
-		0D9D85082A193E61003EE515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D85072A193E61003EE515 /* ContentView.swift */; };
 		0D9D850A2A193E63003EE515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9D85092A193E63003EE515 /* Assets.xcassets */; };
 		0D9D850D2A193E63003EE515 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9D850C2A193E63003EE515 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -33,12 +32,18 @@
 /* Begin PBXFileReference section */
 		0D9D85022A193E61003EE515 /* Buchverwaltung_V_1_0_0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buchverwaltung_V_1_0_0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9D85052A193E61003EE515 /* Buchverwaltung_V_1_0_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buchverwaltung_V_1_0_0App.swift; sourceTree = "<group>"; };
-		0D9D85072A193E61003EE515 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D9D85092A193E63003EE515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9D850C2A193E63003EE515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D9D85122A193E63003EE515 /* Buchverwaltung_V_1_0_0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Buchverwaltung_V_1_0_0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9D851C2A193E63003EE515 /* Buchverwaltung_V_1_0_0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Buchverwaltung_V_1_0_0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0DD45A3C2EC7BBDD0003DF92 /* view */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = view; sourceTree = "<group>"; };
+		0DD45A3D2EC7BBEE0003DF92 /* model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = model; sourceTree = "<group>"; };
+		0DD45A3E2EC7BC000003DF92 /* scheme */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = scheme; sourceTree = "<group>"; };
+		0DD45A472EC7BC9A0003DF92 /* dto */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = dto; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0D9D84FF2A193E61003EE515 /* Frameworks */ = {
@@ -86,8 +91,11 @@
 		0D9D85042A193E61003EE515 /* Buchverwaltung_V_1_0_0 */ = {
 			isa = PBXGroup;
 			children = (
+				0DD45A472EC7BC9A0003DF92 /* dto */,
+				0DD45A3E2EC7BC000003DF92 /* scheme */,
+				0DD45A3D2EC7BBEE0003DF92 /* model */,
+				0DD45A3C2EC7BBDD0003DF92 /* view */,
 				0D9D85052A193E61003EE515 /* Buchverwaltung_V_1_0_0App.swift */,
-				0D9D85072A193E61003EE515 /* ContentView.swift */,
 				0D9D85092A193E63003EE515 /* Assets.xcassets */,
 				0D9D850B2A193E63003EE515 /* Preview Content */,
 			);
@@ -116,6 +124,12 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0DD45A3C2EC7BBDD0003DF92 /* view */,
+				0DD45A3D2EC7BBEE0003DF92 /* model */,
+				0DD45A3E2EC7BC000003DF92 /* scheme */,
+				0DD45A472EC7BC9A0003DF92 /* dto */,
 			);
 			name = Buchverwaltung_V_1_0_0;
 			productName = Buchverwaltung_V_1_0_0;
@@ -232,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9D85082A193E61003EE515 /* ContentView.swift in Sources */,
 				0D9D85062A193E61003EE515 /* Buchverwaltung_V_1_0_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
