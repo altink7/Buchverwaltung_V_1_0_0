@@ -807,22 +807,26 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Appearance")) {
+                Section(header: Text("Settings")) {
                     Picker("Theme", selection: $colorSchemeOption) {
                         ForEach(ColorSchemeOption.allCases) { option in
                             Text(option.rawValue).tag(option)
                         }
                     }
                     .pickerStyle(SegmentedPickerStyle())
-                }
-                
-                Section(header: Text("About")) {
+
                     HStack {
                         Text("Designed By")
                         Spacer()
-                        Text("Altin Kelmendi")
-                            .foregroundColor(.gray)
+                        
+                        VStack {
+                            Text("Altin Kelmendi")
+                                .foregroundColor(.gray)
+                            Text("Julian Hoffmann")
+                                .foregroundColor(.gray)
+                        }
                     }
+                    
                     HStack {
                         Text("App Version")
                         Spacer()
